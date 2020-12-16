@@ -1,5 +1,19 @@
 /*** Add your styles here **/
 
+body {
+    background-color: #f1eeee;
+}
+.encabezado {
+    font-size: 2.4rem;
+    font-family: 'Lato', sans-serif;
+    color: #000000;
+    line-height: 2.4rem;
+}
+.encabezado span {
+    font-size: 3.8rem;
+    font-family: 'Italianno', cursive;
+    color: #e082a8;
+}
 /** Sociales **/
 .sociales ul {
     list-style: none;
@@ -62,8 +76,45 @@
     color: #ffffff;
     font-size: 1.4rem;
     transition: background-color .5s ease-in-out;
+    font-family: 'Raleway', sans-serif;;
 }
 .nav-link:hover {
     background-color: #bde8dd;
     color: #000000;
+}
+/* carousel */
+.carousel-caption h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+/* nuevo sitio */
+.nuevo-sitio p {
+    font-family: 'Lato', sans-serif;
+    color: #979797;
+    font-size: 1.6rem;
+}
+
+/* servicios */
+.imagen-servicio {
+    border: 6px solid #ffffff;
+    -webkit-transition: transform .3s ease;
+    -ms-transition: transform .3s ease;
+    transition: transform .3s ease;
+}
+.imagen-servicio:hover {
+    -webkit-transform: transform .3s ease;
+    -ms-transform: transform .3s ease;
+    transform: scale(1.1);
+}
+.servicio-info {
+    background-color: #ffffff;
+    margin-top: -5rem;
+}
+.servicio-info .btn-primary {
+    border-radius: 0;
+    background-color: #e082a8;
+    border: none;
 }
