@@ -232,3 +232,27 @@ aside {
     background-color: #8ed3cc;
     color: #ffffff;
 }
+/* Acordeon / Servicios */
+#servicios .card-header {
+    background-color: #e082a8;
+    padding: 0 1.25rem;
+}
+#servicios .card-header .btn-link {
+    color: #ffffff;
+    background-color: #e082a8;
+    font-size: 1.6rem;
+}
+#servicios .card-body {
+    font-size: 1.2rem;
+}
+/* Cupón / Servicios */
+.cupon {
+    border: 3px dashed #ffffff;
+    font-family: 'Lato', sans-serif;
+}
+.cupon .display-4 {
+    font-size: 2rem;
+}
+.cupon p {
+    font-size: 1.2rem;
+}
