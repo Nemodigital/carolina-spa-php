@@ -1,3 +1,4 @@
+// script para validar el formulario. Hecho por bootstrap
 (function() {
      'use strict';
      window.addEventListener('load', function() {
