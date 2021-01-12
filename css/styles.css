@@ -82,6 +82,10 @@ body {
     background-color: #bde8dd;
     color: #000000;
 }
+.active {
+    background-color: #e082a8;
+    border-radius: 10px;
+}
 /* carousel */
 .carousel-caption h3 {
     font-family: 'Raleway', sans-serif;

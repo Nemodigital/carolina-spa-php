@@ -1,5 +1,6 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,15 +10,15 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Lato:ital,wght@0,400;0,900;1,700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Productos | CarolinaSpa</title>
   </head>
   <body>
 
     <header class="encabezado-sitio container">
         <div class="row justify-content-md-between align-items-center">
             <div class="col-lg-4">
-              <a href="index.html">
+              <a href="index.php">
                 <img src="img/logo.svg" class="img-fluid mx-auto d-block pt-4 pb-4">
               </a>
             </div>
@@ -53,9 +54,7 @@
               </nav>
             </div>
         </div>
-    </header>
-
-    <div class="navegacion mt-3 py-1">
+    </header><div class="navegacion mt-3 py-1">
       <nav class="nav-principal navbar navbar-expand-md navbar-light bg-faded">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_principal" aria-label="Mostrar Navegacion">
               <span class="navbar-toggler-icon"></span>
@@ -64,27 +63,27 @@
           <div class="container">
                 <div class="collapse navbar-collapse w-100" id="nav_principal">
                     <ul class="nav nav-justified w-100 flex-column flex-sm-row">
-                        <li class="nav-item">
-                              <a href="index.html" class="nav-link">Inicio</a>
+                          <!-- con este código vamos a saber desde que página se está ejecutando esta página -->
+                                                <li class="nav-item ">
+                              <a href="index.php" class="nav-link">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                              <a href="nosotros.html" class="nav-link">Nosotros</a>
+                        <li class="nav-item ">
+                              <a href="nosotros.php" class="nav-link">Nosotros</a>
                         </li>
-                        <li class="nav-item">
-                              <a href="servicios.html" class="nav-link">Servicios</a>
+                        <li class="nav-item ">
+                              <a href="servicios.php" class="nav-link">Servicios</a>
                         </li>
-                        <li class="nav-item">
-                              <a href="productos.html" class="nav-link">Productos</a>
+                        <li class="nav-item active">
+                              <a href="productos.php" class="nav-link">Productos</a>
                         </li>
-                        <li class="nav-item">
-                              <a href="contacto.html" class="nav-link">Contacto</a>
+                        <li class="nav-item ">
+                              <a href="contacto.php" class="nav-link">Contacto</a>
                         </li>
                     </ul>
                 </div> <!--.collapse-->
           </div><!--.container-->
       </nav>
     </div>
-
     <!-- hero -->
     <div class="container pt-4">
       <div class="row no-gutters">
@@ -109,111 +108,135 @@
           <div class="row">
             <!-- para mostrar los cards en columnas -->
             <div class="card-columns">
+                            
               <!-- cards producto -->
               <div class="card">
-                <a href="producto.html">
+                <a href="producto.php?id=1">
                   <img src="img/producto_mini_01.jpg" class="card-img-top img-fluid">
                   <div class="card-body">
                     <h3 class="card-title text-center text-uppercase">
-                      Producto 1
-                    </h3>
-                    <p class="card-text text-uppercase">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    <p class="precio lead text-center mb-0">25€</p>
+                    Kit Hogar                    </h3>
+                    <p class="card-text text-uppercase">
+                      Descripci�n corta del Kit de Hogar                    </p>
+                    <p class="precio lead text-center mb-0">
+                      25.00€
+                    </p>
                   </div><!--fin card-body-->
                 </a>
               </div><!--fin card-->
-
+                            
+              <!-- cards producto -->
               <div class="card">
-                <a href="">
-                  <img src="img/producto_mini_01.jpg" class="card-img-top img-fluid">
+                <a href="producto.php?id=2">
+                  <img src="img/producto_mini_02.jpg" class="card-img-top img-fluid">
                   <div class="card-body">
                     <h3 class="card-title text-center text-uppercase">
-                      Producto 1
-                    </h3>
-                    <p class="card-text text-uppercase">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    <p class="precio lead text-center mb-0">25€</p>
+                    Aromaterapia y Esencias                    </h3>
+                    <p class="card-text text-uppercase">
+                      Aromaterapia y Esencias peque�a descripci�n                    </p>
+                    <p class="precio lead text-center mb-0">
+                      30.00€
+                    </p>
                   </div><!--fin card-body-->
                 </a>
               </div><!--fin card-->
-
+                            
+              <!-- cards producto -->
               <div class="card">
-                <a href="">
-                  <img src="img/producto_mini_01.jpg" class="card-img-top img-fluid">
+                <a href="producto.php?id=3">
+                  <img src="img/producto_mini_03.jpg" class="card-img-top img-fluid">
                   <div class="card-body">
                     <h3 class="card-title text-center text-uppercase">
-                      Producto 1
-                    </h3>
-                    <p class="card-text text-uppercase">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    <p class="precio lead text-center mb-0">25€</p>
+                    Jab�n para Spa de 2 piezas                    </h3>
+                    <p class="card-text text-uppercase">
+                      Jab�n para Spa de 2 piezas con descripci�n corta                    </p>
+                    <p class="precio lead text-center mb-0">
+                      15.00€
+                    </p>
                   </div><!--fin card-body-->
                 </a>
               </div><!--fin card-->
-
+                            
+              <!-- cards producto -->
               <div class="card">
-                <a href="">
-                  <img src="img/producto_mini_01.jpg" class="card-img-top img-fluid">
+                <a href="producto.php?id=4">
+                  <img src="img/producto_mini_04.jpg" class="card-img-top img-fluid">
                   <div class="card-body">
                     <h3 class="card-title text-center text-uppercase">
-                      Producto 1
-                    </h3>
-                    <p class="card-text text-uppercase">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    <p class="precio lead text-center mb-0">25€</p>
+                    Kit para el Hogar 2                    </h3>
+                    <p class="card-text text-uppercase">
+                      Kit para el Hogar 2 descripci�n corta                    </p>
+                    <p class="precio lead text-center mb-0">
+                      20.00€
+                    </p>
                   </div><!--fin card-body-->
                 </a>
               </div><!--fin card-->
-
+                            
+              <!-- cards producto -->
               <div class="card">
-                <a href="">
-                  <img src="img/producto_mini_01.jpg" class="card-img-top img-fluid">
+                <a href="producto.php?id=5">
+                  <img src="img/producto_mini_05.jpg" class="card-img-top img-fluid">
                   <div class="card-body">
                     <h3 class="card-title text-center text-uppercase">
-                      Producto 1
-                    </h3>
-                    <p class="card-text text-uppercase">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    <p class="precio lead text-center mb-0">25€</p>
+                    Velas Aromaticas                    </h3>
+                    <p class="card-text text-uppercase">
+                      Aromatic Candles Short Description                    </p>
+                    <p class="precio lead text-center mb-0">
+                      35.00€
+                    </p>
                   </div><!--fin card-body-->
                 </a>
               </div><!--fin card-->
-
+                            
+              <!-- cards producto -->
               <div class="card">
-                <a href="">
-                  <img src="img/producto_mini_01.jpg" class="card-img-top img-fluid">
+                <a href="producto.php?id=6">
+                  <img src="img/producto_mini_06.jpg" class="card-img-top img-fluid">
                   <div class="card-body">
                     <h3 class="card-title text-center text-uppercase">
-                      Producto 1
-                    </h3>
-                    <p class="card-text text-uppercase">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    <p class="precio lead text-center mb-0">25€</p>
+                    Agua de Rosas                    </h3>
+                    <p class="card-text text-uppercase">
+                      Agua de Rosas descripci�n corta                    </p>
+                    <p class="precio lead text-center mb-0">
+                      3.00€
+                    </p>
                   </div><!--fin card-body-->
                 </a>
               </div><!--fin card-->
-
+                            
+              <!-- cards producto -->
               <div class="card">
-                <a href="">
-                  <img src="img/producto_mini_01.jpg" class="card-img-top img-fluid">
+                <a href="producto.php?id=7">
+                  <img src="img/producto_mini_07.jpg" class="card-img-top img-fluid">
                   <div class="card-body">
                     <h3 class="card-title text-center text-uppercase">
-                      Producto 1
-                    </h3>
-                    <p class="card-text text-uppercase">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    <p class="precio lead text-center mb-0">25€</p>
+                    Piedras Calientes                    </h3>
+                    <p class="card-text text-uppercase">
+                      Descripcion corta de las piedras calientes                    </p>
+                    <p class="precio lead text-center mb-0">
+                      10.00€
+                    </p>
                   </div><!--fin card-body-->
                 </a>
               </div><!--fin card-->
-
+                            
+              <!-- cards producto -->
               <div class="card">
-                <a href="">
-                  <img src="img/producto_mini_01.jpg" class="card-img-top img-fluid">
+                <a href="producto.php?id=8">
+                  <img src="img/producto_mini_08.jpg" class="card-img-top img-fluid">
                   <div class="card-body">
                     <h3 class="card-title text-center text-uppercase">
-                      Producto 1
-                    </h3>
-                    <p class="card-text text-uppercase">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    <p class="precio lead text-center mb-0">25€</p>
+                    Toallas                    </h3>
+                    <p class="card-text text-uppercase">
+                      Toallas descripci�n corta                    </p>
+                    <p class="precio lead text-center mb-0">
+                      12.00€
+                    </p>
                   </div><!--fin card-body-->
                 </a>
               </div><!--fin card-->
-
+                            
             </div><!--fin card-columns-->
 
           </div><!--fin segundo row-->
@@ -224,7 +247,7 @@
     </div><!--fin contenido principal-->
 
     <!-- footer -->
-    <footer class="footer-sitio pt-3 mt-5">
+<footer class="footer-sitio pt-3 mt-5">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
@@ -281,9 +304,11 @@
 
 
  
-    <script src="./js/jquery.slim.js"></script>
+    <script src="/js/jquery.slim.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/scripts.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/scripts.js"></script>
   </body>
 </html>
+
+<!-- código para el caché. Funciona junto al del templates/header.php -->

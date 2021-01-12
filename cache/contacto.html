@@ -1,5 +1,6 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,15 +10,15 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Lato:ital,wght@0,400;0,900;1,700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Contacto | CarolinaSpa</title>
   </head>
   <body>
 
     <header class="encabezado-sitio container">
         <div class="row justify-content-md-between align-items-center">
             <div class="col-lg-4">
-              <a href="index.html">
+              <a href="index.php">
                 <img src="img/logo.svg" class="img-fluid mx-auto d-block pt-4 pb-4">
               </a>
             </div>
@@ -53,9 +54,7 @@
               </nav>
             </div>
         </div>
-    </header>
-
-    <div class="navegacion mt-3 py-1">
+    </header><div class="navegacion mt-3 py-1">
       <nav class="nav-principal navbar navbar-expand-md navbar-light bg-faded">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_principal" aria-label="Mostrar Navegacion">
               <span class="navbar-toggler-icon"></span>
@@ -64,63 +63,91 @@
           <div class="container">
                 <div class="collapse navbar-collapse w-100" id="nav_principal">
                     <ul class="nav nav-justified w-100 flex-column flex-sm-row">
-                        <li class="nav-item">
-                              <a href="index.html" class="nav-link">Inicio</a>
+                          <!-- con este código vamos a saber desde que página se está ejecutando esta página -->
+                                                <li class="nav-item ">
+                              <a href="index.php" class="nav-link">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                              <a href="nosotros.html" class="nav-link">Nosotros</a>
+                        <li class="nav-item ">
+                              <a href="nosotros.php" class="nav-link">Nosotros</a>
                         </li>
-                        <li class="nav-item">
-                              <a href="" class="nav-link">Servicios</a>
+                        <li class="nav-item ">
+                              <a href="servicios.php" class="nav-link">Servicios</a>
                         </li>
-                        <li class="nav-item">
-                              <a href="productos.html" class="nav-link">Productos</a>
+                        <li class="nav-item ">
+                              <a href="productos.php" class="nav-link">Productos</a>
                         </li>
-                        <li class="nav-item">
-                              <a href="contacto.html" class="nav-link">Contacto</a>
+                        <li class="nav-item active">
+                              <a href="contacto.php" class="nav-link">Contacto</a>
                         </li>
                     </ul>
                 </div> <!--.collapse-->
           </div><!--.container-->
       </nav>
     </div>
-
     <!-- hero -->
     <div class="container pt-4">
       <div class="row no-gutters">
         <div class="col-12 hero">
-          <img src="img/producto_01.jpg" class="img-fluid">
+          <img src="img/contacto.jpg" class="img-fluid">
           <!-- en un dispositivo mediano esto se muestra -->
-          <h2 class="text-uppercase d-none d-md-block py-3 px-5">Producto 1</h2>
+          <h2 class="text-uppercase d-none d-md-block py-3 px-5">Contacto</h2>
         </div>
       </div>
     </div>
 
     <!-- Contenido principal -->
     <div class="container pt-4">
-      <div class="row no-gutters">
+      <div class="row justify-content-center">
         <main class="col-lg-8 contenido-principal">
           <!-- en un dispositivo mediano esto se oculta -->
           <h2 class="d-block d-md-none text-uppercase text-center">
-            Producto 1
+            Contacto
           </h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis modi soluta possimus reiciendis cumque vitae, rerum recusandae provident. Unde commodi nam architecto optio voluptatibus vero eos sapiente dicta quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis modi soluta possimus reiciendis cumque vitae, rerum recusandae provident. Unde commodi nam architecto optio voluptatibus vero eos sapiente dicta quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis modi soluta possimus reiciendis cumque vitae, rerum recusandae provident. Unde commodi nam architecto optio voluptatibus vero eos sapiente dicta quas.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui totam culpa quos repellendus maxime et obcaecati. Minus incidunt enim sunt eos saepe, voluptatem ipsum consequuntur quaerat eligendi? Voluptate, eos voluptas.</p>
+          <!-- formulario -->
+          <!-- Esta clase needs-validation debe de ir en form y required tienen que ir en los campos para validar -->
+          <form action="" class="p-5 mt-5 formulario-contacto needs-validation" novalidate>
+            <div class="form-group">
+              <label for="nombre">Nombre:</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+              <div class="invalid-feedback">
+                El nombre es obligatorio
+              </div>
+              <div class="valid-feedback">
+                El nombre es correcto
+              </div>
+            </div><!--fin div-->
+
+            <div class="form-group">
+              <label for="email">E-mail:</label>
+              <input type="email" class="form-control" id="email" placeholder="Tu email" required>
+              <div class="invalid-feedback">
+                El email es obligatorio
+              </div>
+              <div class="valid-feedback">
+                El email es correcto
+              </div>
+            </div><!--fin div-->
+
+            <div class="form-group">
+              <label for="mensaje">Mensaje:</label>
+              <textarea id="mensaje" class="form-control" cols="10" rows="3" required></textarea>
+              <div class="invalid-feedback">
+                El mensaje es obligatorio
+              </div>
+              <div class="valid-feedback">
+                El mensaje es correcto
+              </div>
+            </div><!--fin div-->
+            <input type="submit" class="btn btn-primary tex-uppercase" value="Enviar">
+
+          </form>
         </main>
-        <!-- sidebar -->
-        <aside class="col-lg-4 pt-4 pt-lg-0">
-          <div class="sidebar pt-5 descripcion_producto">
-            <h2 class="text-center text-uppercase mt-4">Descripción</h2>
-            <p class="text-center m-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae unde ducimus hic eligendi consequuntur.</p>
-            <h3 class="text-uppercase text-center mt-5">Precio</h3>
-            <p class="display-4 text-center">25.00€</p>
-          </div>
-        </aside><!--fin sidebar-->
+        
       </div><!--fin row-->
     </div><!--fin contenido principal-->
 
     <!-- footer -->
-    <footer class="footer-sitio pt-3 mt-5">
+<footer class="footer-sitio pt-3 mt-5">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
@@ -177,9 +204,11 @@
 
 
  
-    <script src="./js/jquery.slim.js"></script>
+    <script src="/js/jquery.slim.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/scripts.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/scripts.js"></script>
   </body>
 </html>
+
+<!-- código para el caché. Funciona junto al del templates/header.php -->
